@@ -1,0 +1,421 @@
+.club__bg {
+  height: 100vh;
+  overflow: hidden;
+  max-height: 1400px;
+}
+
+.statistika__bg {
+  background: url(../../assets/images/club/stat_bg.png);
+  background-position: left;
+  background-size: cover;
+}
+.statistika__bg h1 {
+  text-align: center;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.statistika {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back__video {
+  height: 100vh !important;
+  overflow: hidden;
+  max-height: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__club {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+}
+.header__club h1 {
+  font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(100px + 20vmin);
+  line-height: 375px;
+  letter-spacing: 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.oyinchilar {
+  background: url(../../assets/images/club/oyinchilar_bg.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
+}
+.oyinchilar h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.oyinchilar .oyinchilar__item {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  grid-gap: 30px;
+  width: 75%;
+  height: 660px;
+  position: relative;
+}
+.oyinchilar .oyinchilar__item .oyinchi__info {
+  transition: 0.3s linear;
+  opacity: 0;
+}
+.oyinchilar .oyinchilar__item .oyinchi__rasmi img {
+  width: 390px;
+  height: 590px;
+  transition: 0.4s linear;
+  opacity: 0.5;
+}
+.oyinchilar .oyinchilar__item .img__570 {
+  display: none;
+}
+.oyinchilar .oyinchilar__item .oyinchi__yoshi {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 125px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.oyinchilar .oyinchilar__item .oyinchi__ismi {
+  margin-bottom: 10px;
+}
+.oyinchilar .oyinchilar__item .oyinchi__ismi p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.oyinchilar .oyinchilar__item .oyinchi__lavozimi {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #BF0000;
+  margin-bottom: 40px;
+}
+.oyinchilar .oyinchilar__item .oyinchi__stat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.oyinchilar .oyinchilar__item .oyinchi__stat div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.oyinchilar .oyinchilar__item .oyinchi__stat p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27.3415px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
+  width: 70px;
+  margin-bottom: 5px;
+}
+.oyinchilar .oyinchilar__item .oyinchi__stat span {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.6708px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.oyinchilar .swiper-slide-active .oyinchi__info {
+  opacity: 1;
+}
+.oyinchilar .swiper-slide-active .oyinchi__rasmi img {
+  width: 415px;
+  height: 650px;
+  opacity: 1;
+}
+.oyinchilar .swiper-slide-prev .oyinchi__rasmi {
+  transition: 0.4s linear;
+  transform: translateX(50%);
+}
+.oyinchilar .swiper-button-prev, .oyinchilar .swiper-button-next {
+  top: auto;
+}
+.oyinchilar .swiper-button-prev {
+  left: 54%;
+  width: 52px;
+  height: 15px;
+  bottom: 20px;
+}
+.oyinchilar .swiper-button-prev::after {
+  content: "";
+  background: url(../../assets/images/club/arrow_left.png);
+  background-position: center;
+  background-size: cover;
+  width: 52px;
+  height: 15px;
+  transform: rotate(180deg);
+}
+.oyinchilar .swiper-button-next {
+  right: 37%;
+  width: 52px;
+  height: 15px;
+  bottom: 21px;
+}
+.oyinchilar .swiper-button-next::after {
+  content: "";
+  background: url(../../assets/images/club/arrow_left.png);
+  background-position: center;
+  background-size: cover;
+  width: 52px;
+  height: 15px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back__video video {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back__video video {
+    width: auto !important;
+    height: 100% !important;
+  }
+}
+@media (max-width: 1440px) {
+  .header__club h1 {
+    letter-spacing: 5px;
+    font-size: 14rem;
+  }
+  .oyinchilar h1 {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1220px) {
+  .oyinchilar .swiper-button-next {
+    right: 43%;
+  }
+  .oyinchilar .swiper-button-prev {
+    left: 43%;
+  }
+}
+@media (max-width: 1100px) {
+  .header__club {
+    top: 30%;
+  }
+  .header__club h1 {
+    letter-spacing: 5px;
+    font-size: 12rem;
+  }
+}
+@media (max-width: 1024px) {
+  .oyinchilar .oyinchilar__item {
+    width: 80%;
+    grid-gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .header__club {
+    top: 150px;
+  }
+  .header__club h1 {
+    letter-spacing: 5px;
+    font-size: 12rem;
+    line-height: 250px;
+  }
+  .oyinchilar h1 {
+    font-size: 30px;
+  }
+  .oyinchilar .swiper-button-prev {
+    left: 65%;
+  }
+  .oyinchilar .swiper-button-next {
+    right: 17%;
+  }
+  .oyinchilar .oyinchilar__item {
+    width: 100%;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__rasmi img {
+    width: 100%;
+    height: auto;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__yoshi {
+    font-size: 130px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__ismi p {
+    font-size: 35px;
+  }
+}
+@media (max-width: 650px) {
+  .header__club h1 {
+    font-size: 9rem;
+    line-height: 180px;
+  }
+  .oyinchilar h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  .oyinchilar .swiper-slide-prev .oyinchi__rasmi {
+    transform: translateX(0);
+  }
+  .oyinchilar .oyinchilar__item {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 570px) {
+  .oyinchilar {
+    padding-top: 40px;
+  }
+  .oyinchilar h1 {
+    font-size: 23px;
+  }
+  .oyinchilar .oyinchi__rasmi {
+    display: none;
+  }
+  .oyinchilar .oyinchilar__item {
+    grid-template-columns: 1fr;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .oyinchilar .oyinchilar__item .img__570 {
+    display: block;
+  }
+  .oyinchilar .oyinchilar__item .img__570 img {
+    width: 250px;
+    height: auto;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__stat {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 2;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__yoshi {
+    font-size: 100px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__ismi p {
+    font-size: 30px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__lavozimi {
+    font-size: 22px;
+  }
+  .oyinchilar .swiper-button-prev {
+    left: 35%;
+  }
+  .oyinchilar .swiper-button-next {
+    right: 35%;
+  }
+}
+@media (max-width: 425px) {
+  .header__club {
+    top: 30%;
+  }
+  .header__club h1 {
+    font-size: 7rem;
+    line-height: 140px;
+  }
+  .oyinchilar h1 {
+    font-size: 18px;
+  }
+  .oyinchilar .oyinchilar__item {
+    height: 500px;
+    align-items: flex-start;
+  }
+  .oyinchilar .oyinchilar__item .img__570 img {
+    width: 200px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__yoshi {
+    font-size: 90px;
+    line-height: 80px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__ismi p {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__lavozimi {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 375px) {
+  .oyinchilar {
+    padding-top: 20px;
+  }
+  .oyinchilar h1 {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+  .oyinchilar .oyinchilar__item {
+    height: 530px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__stat {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    justify-items: flex-start;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__stat p {
+    font-size: 22px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__stat span {
+    font-size: 12px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__yoshi {
+    font-size: 60px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__ismi p {
+    font-size: 20px;
+  }
+  .oyinchilar .oyinchilar__item .oyinchi__lavozimi {
+    font-size: 16px;
+  }
+  .oyinchilar .oyinchilar__item .img__570 img {
+    width: 180px;
+  }
+  .oyinchilar .swiper-button-next {
+    right: 30%;
+  }
+  .oyinchilar .swiper-button-prev {
+    left: 30%;
+  }
+}
+@media (max-width: 320px) {
+  .oyinchilar h1 {
+    font-size: 14px;
+  }
+}

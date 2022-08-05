@@ -1,0 +1,151 @@
+.academy__bg{
+  height: 100vh;
+  overflow: hidden;
+  max-height: 1440px;
+  background: 
+    radial-gradient(50% 50% at 50% 50%, #00000000 1.04%, #00000059 100%), 
+    url(../../assets/images/Academy/academy_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__academy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 800px;
+  h1{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 265px;
+    line-height: 383px;
+    color: #FFFFFF;
+  }
+}
+.academy{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 50px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  img{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+  }
+  p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  h3{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 25px;
+    margin-top: 70px;
+  }
+  .bottom30{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width:1440px) {
+  .header__academy{
+    h1{
+      font-size: 240px;
+    }
+  }
+}
+@media (max-width:1300px) {
+  .header__academy{
+    h1{
+      font-size: 185px;
+    }
+  }
+}
+@media (max-width:1024px) {
+  .header__academy{
+    h1{
+      font-size: 140px;
+    }
+  }
+  .academy{
+    padding: 0 20px;
+    h3{
+      margin-top: 50px;
+    }
+    img{
+      margin-top: 50px;
+    }
+    .bottom30{
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width:768px) {
+  .header__academy{
+    h1{
+      font-size: 90px;
+    }
+  }
+  .academy{
+    padding: 0 20px;
+    h3{
+      margin-top: 20px;
+      font-size: 25px;
+    }
+    p{
+      font-size: 17px;
+    }
+    img{
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width:490px) {
+  .header__academy{
+    h1{
+      font-size: 70px;
+    }
+  }
+}
+@media (max-width:425px) {
+  .header__academy{
+    h1{
+      font-size: 70px;
+    }
+  }
+  .academy{
+    padding: 0 15px;
+    p{
+      line-height: 22px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    h3{
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    img{
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width:375px) {
+  .header__academy{
+    h1{
+      font-size: 50px;
+    }
+  }
+}

@@ -1,0 +1,215 @@
+.nav__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 170px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: 0.3s linear;
+  z-index: 100;
+  background: linear-gradient(0deg, rgba(0, 7, 34, 0.7882352941), rgba(0, 7, 34, 0.7882352941)), url(../../assets/images/nav_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 0px;
+  max-width: 170px;
+  flex-grow: 1;
+}
+
+.nav__scrolled .navbar {
+  flex-direction: row;
+  width: 100%;
+}
+
+.burger__btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60px;
+  height: 26px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  grid-gap: 5px;
+}
+.burger__btn span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: white;
+  transition: 0.2s linear;
+}
+.burger__btn span:nth-child(1) {
+  transform: translateX(-10px);
+}
+.burger__btn span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+.burger__btn span:nth-child(3) {
+  transform: translateX(10px);
+}
+.burger__btn:hover span:nth-child(1) {
+  transform: translateX(0px);
+}
+.burger__btn:hover span:nth-child(2) {
+  opacity: 1;
+  transform: scale(1);
+}
+.burger__btn:hover span:nth-child(3) {
+  transform: translateX(0px);
+}
+
+.nav {
+  margin-top: 50px;
+  width: 100%;
+}
+.nav nav {
+  z-index: 1;
+  transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.nav nav .links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 100%;
+}
+.nav nav .links a {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #747474;
+  transition: 0.3s ease;
+  width: calc(100% - 30px);
+  min-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2196078431);
+  border-top: 1px solid rgba(255, 255, 255, 0.2196078431);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+}
+.nav nav .links a:nth-child(2) {
+  border-top: 2px solid rgba(255, 255, 255, 0.2196078431);
+}
+.nav nav .links a:last-child {
+  border-bottom-width: 2px;
+}
+.nav nav .links a svg path {
+  stroke: #747474;
+}
+.nav nav .links a:hover {
+  color: #fff;
+}
+.nav nav .links a:hover svg path {
+  stroke: #fff;
+}
+.nav nav .links a:hover .nav__svg path {
+  fill: #fff;
+}
+.nav nav .links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: calc(100% + 4px);
+  width: 0px;
+  background: #BF0000;
+  transition: 0.3s linear;
+}
+.nav nav .links .active {
+  color: #fff;
+}
+.nav nav .links .active svg path {
+  stroke: #fff;
+}
+.nav nav .links .active .nav__svg path {
+  fill: #fff;
+}
+.nav nav .links .active::before {
+  width: 7px;
+}
+.nav .nav__show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  height: 100vh;
+  width: 100%;
+  transition: 0.3s cubic-bezier(1, 0, 0, 1);
+}
+
+.close__btn {
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.close__btn span {
+  width: 25px;
+  height: 2px;
+  background: #000000;
+  transition: 0.3s ease;
+}
+.close__btn span:nth-child(1) {
+  transform: translateY(1px) rotate(45deg);
+}
+.close__btn span:nth-child(2) {
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+@media (max-width: 1440px) {
+  .navbar {
+    padding: 20px 50px 20px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .logo img {
+    width: 60px;
+  }
+  .burger__btn {
+    grid-gap: 4px;
+  }
+  .burger__btn span {
+    width: 30px;
+  }
+  .burger__btn span:nth-child(1) {
+    transform: translateX(-5px);
+  }
+  .burger__btn span:nth-child(3) {
+    transform: translateX(5px);
+  }
+}
+@media (max-width: 425px) {
+  .navbar {
+    padding: 20px 10px 10px 20px;
+  }
+  .logo img {
+    width: 50px;
+  }
+}

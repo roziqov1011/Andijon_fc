@@ -1,0 +1,323 @@
+.header__media{
+  max-width: 1920px;
+  height: 100vh;
+  max-height: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:nth-child(1){
+      background: url(../../assets/images/Media/bg1.png) center;
+      background-size: cover;
+    }
+    &:nth-child(2){
+      background: url(../../assets/images/Media/bg2.png) center;
+      background-size: cover;
+    }
+  }
+  h1{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 134px;
+    line-height: 193px;
+    color: #FFFFFF;
+    text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  h2{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 74px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 3.21408px 8.03519px rgba(0, 0, 0, 0.5);
+    padding: 0 80px;
+    max-width: 700px;
+  }
+}
+.mashhur{
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  grid-gap: 10px;
+  margin-top: 150px;
+  margin-bottom: 120px;
+  background: url(../../assets/icons/Loading.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  .mashhur__info{
+    background: white url(../../assets/images/Media/mashhur_bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    grid-gap: 50px;
+    padding: 50px;
+    h1{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 46px;
+      color: #000000;
+    }
+    p{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 32px;
+      color: #333333;      
+    }
+  }
+}
+.mashhur__content{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+    "itm_b itm_s1"
+    "itm_b itm_s2"
+  ;
+  align-items: flex-end;
+  transition: 0.3s linear;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  animation-timing-function: linear;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.mashhur__item{
+  // background: url(../../assets/images/Media/mashhur_bg.png), white, center;
+  background: white url(../../assets/images/Media/mashhur_bg.png);
+  background-position: center;
+  background-size: cover;
+  p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33.814px;
+    line-height: 49px;
+    color: #000000;
+    margin-left: 10px;
+  }
+  cursor: pointer;
+  // opacity: 0;
+}
+.oxirgilar_bg{
+  background:
+    radial-gradient(50% 50% at 50% 50%, #000000a1 0%, #000000d2 100%),
+    url(../../assets/images/Media/oxirgilar_bg.png)
+  ;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  padding: 50px 0 60px 0;
+}
+.oxirgilar{
+  padding: 0 50px;
+  h1{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+  }
+}
+.oxirgilar__content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 0;
+}
+.oxirgilar__item{
+  cursor: pointer;
+  transition: 0.3s linear;
+  img{
+    width: 100%;
+  }
+  p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  &:hover{
+    transform: scale(1.01);
+  }
+}
+.mashhur__item:nth-child(1){
+  grid-area: itm_b;
+  transition: 0.3s linear;
+  &:hover{
+    transform: scale(1.01);
+  }
+}
+.mashhur__item:nth-child(2){
+  grid-area: itm_s1;
+  transition: 0.3s linear;
+  transform: translateX(-80px) translateY(-20px);
+  &:hover{
+    transform: scale(1.01) translateX(-80px) translateY(-20px);
+  }
+  p{
+    font-size: 14px;
+  }
+}
+.mashhur__item:nth-child(3){
+  grid-area: itm_s2;
+  transition: 0.3s linear;
+  transform: translateX(-80px) translateY(-10px);
+  &:hover{
+    transform: scale(1.01) translateX(-80px) translateY(-10px);
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width:1315px) {
+  .mashhur{
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+    grid-gap: 0;
+    margin-top: 100px;
+    .mashhur__info{
+      background: white;
+    }
+  }
+}
+@media (max-width:1024px) {
+  .header__media{
+    h1{
+      font-size: 95px;
+    }
+    h2{
+      font-size: 40px;
+      padding: 0 10px;
+      max-width: 100%;
+    }
+  }
+  .mashhur__content{
+    grid-template-columns: 2.7fr 1fr;
+  }
+  .oxirgilar__item{
+    p{
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width:925px) {
+  .oxirgilar__content{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:890px) {
+  .mashhur__content{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "itm_b itm_s1 itm_s2";
+    // grid-gap: 10px;
+  }
+  .mashhur__item:nth-child(2){
+    transform: translateX(0px) translateY(0px);
+    &:hover{
+      transform: scale(1.01) translateX(0) translateY(0);
+    }
+  }
+  .mashhur__item:nth-child(3){
+    transform: translateX(0px) translateY(0px);
+    &:hover{
+      transform: scale(1.01) translateX(0) translateY(0);
+    }
+  }
+  .mashhur__item{
+    min-height: 300px;
+    padding: 0 5px;
+    p{
+      font-size: 13px;
+      line-height: 30px;
+    }
+  }
+  .mashhur{
+    background: white;
+    .mashhur__info{
+      padding: 30px 0;
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width:768px) {
+  .header__media{
+    h1{
+      font-size: 70px;
+    }
+    h2{
+      font-size: 33px;
+    }
+  }
+  .oxirgilar{
+    padding: 0 30px;
+  }
+}
+@media (max-width:650px) {
+  .header__media{
+    grid-template-columns: 1fr;
+    div:nth-child(2){
+      display: none;
+    }
+  }
+  .mashhur__content{
+    grid-template-columns: 1fr;
+    grid-template-areas: "itm_b" "itm_s1" "itm_s2";
+  }
+  .mashhur__item{
+    padding: 10px 5px;
+    p{
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width:615px) {
+  .oxirgilar__content{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width:425px) {
+  .mashhur__item{
+    p{
+      font-size: 16px;
+    }
+  }
+  .mashhur{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    .mashhur__info{
+      grid-gap: 20px;
+      p{
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+  }
+  .oxirgilar{
+    padding: 0 15px;
+  }
+}

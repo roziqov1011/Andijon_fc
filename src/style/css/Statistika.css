@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+.statistika__bg {
+  padding-bottom: 150px;
+  width: 100%;
+  background-image: url("../../assets/images/statistika/arena.jpg");
+}
+
+.statistika__title {
+  font-weight: 600;
+  font-size: 194.503px;
+  line-height: 281px;
+  color: white;
+  text-align: center;
+  font-family: "Jost";
+}
+
+.statistika__wrapper {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 1022px;
+  background: rgba(34, 24, 147, 0.79);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.statistika__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.statistika__nav .link__list {
+  display: flex;
+  align-items: center;
+}
+.statistika__nav .link__list a {
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  margin-right: 65px;
+}
+.statistika__nav .link__list .aktivv {
+  font-family: "Montserrat";
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.statistika__nav .link__list .aktivv::before {
+  content: "";
+  background-color: white;
+  width: 100%;
+  display: block;
+  height: 2px;
+}
+.statistika__nav .link__list .aktivv::after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  display: block;
+  height: 2px;
+}
+.statistika__nav .link__list .noaktiv {
+  color: #9B9B9B;
+}
+
+.search-statistika select {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.search-statistika select:nth-child(1) {
+  width: 198px;
+  margin-right: 20px;
+}
+.search-statistika select:nth-child(2) {
+  width: 94px;
+}
+
+.statistika__table {
+  width: 100%;
+  height: 600px;
+  overflow: scroll;
+}
+.statistika__table::-webkit-scrollbar {
+  display: none;
+}
+
+.statistika__game-inner {
+  font-family: "Jost";
+  border-bottom: 1px solid #fff;
+  padding: 25px 25px 10px 25px;
+}
+.statistika__game-inner .statistika__table-date {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.statistika__game-inner .statistika__table-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.statistika__game-inner .statistika__table-info .club1 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.statistika__game-inner .statistika__table-info .club1 img {
+  width: 41px;
+  height: 41px;
+}
+.statistika__game-inner .statistika__table-info .club1 span {
+  font-size: 20px;
+}
+.statistika__game-inner .statistika__table-info .club2 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.statistika__game-inner .statistika__table-info .club2 img {
+  width: 41px;
+  height: 41px;
+}
+.statistika__game-inner .statistika__table-info .club2 span {
+  font-size: 20px;
+}
+.statistika__game-inner .statistika__table-info .bill span {
+  background-color: red;
+  padding: 0 12px;
+  color: #fff;
+}
+.statistika__game-inner .statistika__table-info .bill span:nth-child(2) {
+  border-left: 1px solid #fff;
+}
+
+.statistika__table-inner {
+  font-family: "Jost";
+  border-bottom: 1px solid #fff;
+  padding: 25px 25px 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.statistika__club-name {
+  display: flex;
+  align-items: center;
+}
+.statistika__club-name h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
+.statistika__club-name img {
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 43px;
+  height: 43px;
+}
+
+.statistika__shot {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
